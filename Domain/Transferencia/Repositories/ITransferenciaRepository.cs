@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Domain.Transferencia.Repositories
+﻿namespace Domain.Transferencia.Repositories
 {
-    public interface ITransferenciaRepository
+    public interface ITransferenciaRepository : IRepository<Entities.Transferencia>
     {
     }
 }

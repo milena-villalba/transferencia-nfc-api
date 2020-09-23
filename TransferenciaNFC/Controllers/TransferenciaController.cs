@@ -1,6 +1,7 @@
 ﻿using Application.Transferencia.Services;
 using Domain.Transferencia.Commands;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace TransferenciaNFC.Controllers
 {
@@ -18,6 +19,12 @@ namespace TransferenciaNFC.Controllers
         public IActionResult Enviar(EnvioCommand command)
         {
             return this.Ok(_service.Enviar(command));
+        }
+
+        [HttpGet("receber")]
+        public IActionResult Receber(Guid dispositivoId)
+        {
+            return this.Ok(_service.Receber(dispositivoId));
         }
     }
 }

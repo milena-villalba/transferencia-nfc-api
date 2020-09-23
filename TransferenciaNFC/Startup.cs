@@ -1,6 +1,8 @@
 using Application.Transferencia.Services;
+using Domain.Transferencia.Repositories;
 using Infra.Context;
 using Infra.Publishers;
+using Infra.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -78,8 +80,10 @@ namespace TransferenciaNFC
 
         private void RegisterServices(IServiceCollection services)
         {
+            services.AddScoped<TransferenciaContext, TransferenciaContext>();
             services.AddTransient<IPublisher, Publisher>();
-            services.AddTransient<IEnvioTransferenciaService, EnvioTransferenciaService>();
+            services.AddScoped<IEnvioTransferenciaService, EnvioTransferenciaService>();
+            services.AddScoped<ITransferenciaRepository, TransferenciaRepository>();
         }
     }
 }

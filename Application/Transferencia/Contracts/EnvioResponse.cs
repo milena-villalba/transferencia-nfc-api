@@ -1,8 +1,10 @@
-﻿namespace Application.Transferencia.Contracts
+﻿using System;
+
+namespace Application.Transferencia.Contracts
 {
     public class EnvioResponse
     {
-        public string DispositivoId { get; set; }
+        public Guid DispositivoId { get; set; }
         public string Nome { get; set; }
         public decimal Valor { get; set; }
     }

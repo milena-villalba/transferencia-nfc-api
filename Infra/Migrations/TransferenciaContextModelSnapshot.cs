@@ -29,9 +29,11 @@ namespace Infra.Migrations
                     b.Property<bool>("Ativa")
                         .HasColumnType("bit");
 
-                    b.Property<string>("DispositivoId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid?>("DispositivoDestinoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("DispositivoOrigemId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(100)")
@@ -42,7 +44,7 @@ namespace Infra.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DispositivoId", "Ativa");
+                    b.HasIndex("DispositivoOrigemId", "Ativa");
 
                     b.ToTable("Transferencia");
                 });

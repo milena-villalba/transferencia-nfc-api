@@ -25,7 +25,7 @@ namespace Infra.Context
 
                 builder.Property(x => x.Nome)
                     .HasMaxLength(100);
-                builder.Property(x => x.DispositivoId)
+                builder.Property(x => x.DispositivoOrigemId)
                     .IsRequired();
                 builder.Property(x => x.Valor)
                     .IsRequired();
@@ -34,7 +34,7 @@ namespace Infra.Context
 
                 builder.HasIndex(x => new
                 {
-                    x.DispositivoId,
+                    x.DispositivoOrigemId,
                     x.Ativa
                 });
             });

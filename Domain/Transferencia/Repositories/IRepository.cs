@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Linq;
 
 namespace Domain.Transferencia.Repositories
 {
-    public interface IRepository
+    public interface IRepository<TEntity> where TEntity: Entities.EntityBase
     {
-
+        TEntity AddOrUpdate(TEntity entity);
+        IQueryable<TEntity> GetAll();
     }
 }
