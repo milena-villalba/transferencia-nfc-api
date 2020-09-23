@@ -1,0 +1,11 @@
+C:\git\TransferenciaNFC\Infra\bin\Debug\netcoreapp3.1\Infra.deps.json
+C:\git\TransferenciaNFC\Infra\bin\Debug\netcoreapp3.1\Infra.dll
+C:\git\TransferenciaNFC\Infra\obj\Debug\netcoreapp3.1\Infra.AssemblyInfoInputs.cache
+C:\git\TransferenciaNFC\Infra\obj\Debug\netcoreapp3.1\Infra.AssemblyInfo.cs
+C:\git\TransferenciaNFC\Infra\obj\Debug\netcoreapp3.1\Infra.csprojAssemblyReference.cache
+C:\git\TransferenciaNFC\Infra\bin\Debug\netcoreapp3.1\Infra.pdb
+C:\git\TransferenciaNFC\Infra\bin\Debug\netcoreapp3.1\Domain.dll
+C:\git\TransferenciaNFC\Infra\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\git\TransferenciaNFC\Infra\obj\Debug\netcoreapp3.1\Infra.csproj.CopyComplete
+C:\git\TransferenciaNFC\Infra\obj\Debug\netcoreapp3.1\Infra.dll
+C:\git\TransferenciaNFC\Infra\obj\Debug\netcoreapp3.1\Infra.pdb
