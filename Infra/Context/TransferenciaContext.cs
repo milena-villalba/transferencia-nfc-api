@@ -11,7 +11,7 @@ namespace Infra.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(@"Server=db-server;Database=TransferenciaNFC;User=sa;Password=transferencia",
+            options.UseSqlServer(@"Server=.;Database=TransferenciaNFC;Trusted_Connection=True;MultipleActiveResultSets=true",
                      b => b.EnableRetryOnFailure());
         }
 
