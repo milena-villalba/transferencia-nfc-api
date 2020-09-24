@@ -1,3 +1,4 @@
+using Application.Transferencia.Mappers;
 using Application.Transferencia.Services;
 using Domain.Transferencia.Repositories;
 using Infra.Context;
@@ -84,6 +85,7 @@ namespace TransferenciaNFC
             services.AddTransient<IPublisher, Publisher>();
             services.AddScoped<IEnvioTransferenciaService, EnvioTransferenciaService>();
             services.AddScoped<ITransferenciaRepository, TransferenciaRepository>();
+            services.AddScoped<ITransferenciaMapper, TransferenciaMapper>();
         }
     }
 }
